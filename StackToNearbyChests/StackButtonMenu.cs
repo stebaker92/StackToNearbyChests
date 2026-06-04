@@ -1,15 +1,10 @@
 ﻿using StardewValley.Menus;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
 using StardewValley;
-using StardewModdingAPI;
 
 
 namespace StackToNearbyChests
@@ -67,11 +62,6 @@ namespace StackToNearbyChests
 
         }
 
-        private void UpdatePosition()
-        {
-            CreateButton();
-        }
-
         public override void draw(SpriteBatch spriteBatch)
         {
             base.draw(spriteBatch);
@@ -83,10 +73,5 @@ namespace StackToNearbyChests
 
         }
 
-        public override void update(GameTime time)
-        {
-            base.update(time);
-        }
-        
     }
 }
